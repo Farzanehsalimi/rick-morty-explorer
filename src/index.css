@@ -1,0 +1,16 @@
+@import "/src/styles/fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-karla;
+  }
+}
+
+body.modal-open {
+  overflow: hidden !important;
+  padding-right: 15px !important; /* مقدار ثابت یا با جاوااسکریپت محاسبه شده */
+}

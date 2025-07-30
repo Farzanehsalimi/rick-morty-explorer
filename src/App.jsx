@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";
@@ -7,22 +7,67 @@ import Locations from "./pages/Locations/Locations";
 import LocationDetails from "./pages/LocationDetails/LocationDetails";
 import Episodes from "./pages/Episodes/Episodes";
 import EpisodeDetails from "./pages/EpisodeDetails/EpisodeDetails";
-import { NavModalProvider } from "./contexts/NavModalContext";
+import PageTransitionWrapper from "./components/PageTransitionWrapper/PageTransitionWrapper";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
+
   return (
-    <NavModalProvider>
-      <Routes>
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home key={window.location.pathname} />} />
-          <Route path="character/:id" element={<CharacterDetail />} />
-          <Route path="locations" element={<Locations />} />
-          <Route path="location/:id" element={<LocationDetails />} />
-          <Route path="episodes" element={<Episodes />} />
-          <Route path="episode/:id" element={<EpisodeDetails />} />
+          <Route
+            index
+            element={
+              <PageTransitionWrapper>
+                <Home />
+              </PageTransitionWrapper>
+            }
+          />
+          <Route
+            path="character/:id"
+            element={
+              <PageTransitionWrapper>
+                <CharacterDetail />
+              </PageTransitionWrapper>
+            }
+          />
+          <Route
+            path="locations"
+            element={
+              <PageTransitionWrapper>
+                <Locations />
+              </PageTransitionWrapper>
+            }
+          />
+          <Route
+            path="location/:id"
+            element={
+              <PageTransitionWrapper>
+                <LocationDetails />
+              </PageTransitionWrapper>
+            }
+          />
+          <Route
+            path="episodes"
+            element={
+              <PageTransitionWrapper>
+                <Episodes />
+              </PageTransitionWrapper>
+            }
+          />
+          <Route
+            path="episode/:id"
+            element={
+              <PageTransitionWrapper>
+                <EpisodeDetails />
+              </PageTransitionWrapper>
+            }
+          />
         </Route>
       </Routes>
-    </NavModalProvider>
+    </AnimatePresence>
   );
 }
 

@@ -1,4 +1,4 @@
-import api from "../../../api/api";
+import api from "../../../shared/api/api";
 
 export const getAllCharacters = async () => {
   try {

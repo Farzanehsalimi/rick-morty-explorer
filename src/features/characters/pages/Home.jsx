@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import CustomSelect from "../../../shared/components/CustomSelect";
 import SearchFilter from "../../../shared/components/SearchFilter";
-import LoadMoreButton from "../../../components/LoadMoreButton/LoadMoreButton";
+import LoadMoreButton from "../../../shared/components/LoadMoreButton";
 import CharacterFilterModal from "../components/CharacterFilterModal";
 import FilterModalContainer from "../../../shared/components/FilterModalContainer";
 import Backdrop from "../../../shared/components/Backdrop";

@@ -1,4 +1,4 @@
-import LoadMoreButton from "../../../components/LoadMoreButton/LoadMoreButton";
+import LoadMoreButton from "../../../shared/components/LoadMoreButton";
 import SearchFilter from "../../../shared/components/SearchFilter";
 // import useMoveBack from "../../../hooks/useMoveBack";
 

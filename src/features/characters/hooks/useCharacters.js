@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
-import { getAllCharacters } from "../services/rickAndMortyService";
+import { getAllCharacters } from "../api/characterApi";
 
 const useCharacters = () => {
   const [characters, setCharacters] = useState([]);

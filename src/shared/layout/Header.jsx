@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import NavLinks from "../nav/NavLinks";
-import { useMobileMenu } from "../../hooks/useMobileMenu";
-import MobileMenuOverlay from "./MobileMenuOverlay";
+import NavLinks from "./NavLinks";
+import { useMobileMenu } from "./hooks/useMobileMenu";
+import MobileMenuOverlay from "../components/MobileMenuOverlay";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 

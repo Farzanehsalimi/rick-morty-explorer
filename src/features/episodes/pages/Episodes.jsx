@@ -1,6 +1,6 @@
-import LoadMoreButton from "../../components/LoadMoreButton/LoadMoreButton";
-import SearchFilter from "../../components/SearchFilter/SearchFilter";
-import useMoveBack from "../../hooks/useMoveBack";
+import LoadMoreButton from "../../../components/LoadMoreButton/LoadMoreButton";
+import SearchFilter from "../../../shared/components/SearchFilter";
+import useMoveBack from "../../../hooks/useMoveBack";
 
 function Episodes() {
   return (

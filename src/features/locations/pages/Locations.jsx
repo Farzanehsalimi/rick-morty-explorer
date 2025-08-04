@@ -1,11 +1,11 @@
 import { useState } from "react";
-import CustomSelect from "../../components/CustomSelect/CustomSelect";
-import LoadMoreButton from "../../components/LoadMoreButton/LoadMoreButton";
-import SearchFilter from "../../components/SearchFilter/SearchFilter";
-import FilterModalContainer from "../../components/Modal/FilterModalContainer";
-import Backdrop from "../../components/Backdrop/Backdrop";
-import LocationFilterModal from "../../components/Modal/LocationFilterModal";
-import { useModal } from "../../hooks/useModal";
+import CustomSelect from "../../../shared/components/CustomSelect";
+import LoadMoreButton from "../../../components/LoadMoreButton/LoadMoreButton";
+import SearchFilter from "../../../shared/components/SearchFilter";
+import FilterModalContainer from "../../../shared/components/FilterModalContainer";
+import Backdrop from "../../../shared/components/Backdrop";
+import LocationFilterModal from "../components/LocationFilterModal";
+import { useModal } from "../../../shared/hooks/useModal";
 
 function Locations() {
   const [selectedType, setSelectedType] = useState("");

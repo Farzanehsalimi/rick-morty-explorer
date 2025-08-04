@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
-import CustomSelect from "../../components/CustomSelect/CustomSelect";
-import SearchFilter from "../../components/SearchFilter/SearchFilter";
-import LoadMoreButton from "../../components/LoadMoreButton/LoadMoreButton";
-import CharacterFilterModal from "../../components/Modal/CharacterFilterModal";
-import FilterModalContainer from "../../components/Modal/FilterModalContainer";
-import Backdrop from "../../components/Backdrop/Backdrop";
-import { useModal } from "../../hooks/useModal";
-import CharacterList from "../../components/CharacterList/CharacterList";
-import useCharcters from "../../hooks/useCharacters";
+import CustomSelect from "../../../shared/components/CustomSelect";
+import SearchFilter from "../../../shared/components/SearchFilter";
+import LoadMoreButton from "../../../components/LoadMoreButton/LoadMoreButton";
+import CharacterFilterModal from "../components/CharacterFilterModal";
+import FilterModalContainer from "../../../shared/components/FilterModalContainer";
+import Backdrop from "../../../shared/components/Backdrop";
+import { useModal } from "../../../shared/hooks/useModal";
+import CharacterList from "../components/CharacterList";
+import useCharcters from "../hooks/useCharacters";
 import RickAndMortyLogo from "/src/assets/images/rick-and-morty-logo-charaters.svg";
 import toast from "react-hot-toast";
-import CharacterSkeletonList from "../../components/Skeleton/CharacterSkeletonList";
-import WithOfflineGuard from "../../components/WithOfflineGuard/WithOfflineGuard";
+import CharacterSkeletonList from "../components/CharacterSkeletonList";
+import WithOfflineGuard from "../../../shared/components/WithOfflineGuard";
 
 function Home() {
   const [selectedGender, setSelectedGender] = useState("");

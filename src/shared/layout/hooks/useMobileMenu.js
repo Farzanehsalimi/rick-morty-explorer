@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import useScrollLock from "../hooks/useScrollLock";
+import useScrollLock from "../../hooks/useScrollLock";
 
 export function useMobileMenu() {
   const [isOpen, setIsOpen] = useState(false);

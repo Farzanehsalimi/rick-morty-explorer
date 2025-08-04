@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import useMoveBack from "../../hooks/useMoveBack";
+import useMoveBack from "../../../hooks/useMoveBack";
 
 function CharacterDetail() {
   const { id } = useParams();

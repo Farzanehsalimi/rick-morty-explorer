@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CustomSelect from "../CustomSelect/CustomSelect";
+import CustomSelect from "../../../shared/components/CustomSelect";
 
 function CharacterFilterModal() {
   const [selectedGender, setSelectedGender] = useState("");

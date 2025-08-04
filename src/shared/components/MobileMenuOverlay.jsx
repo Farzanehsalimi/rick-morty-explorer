@@ -1,4 +1,4 @@
-import NavLinks from "../nav/NavLinks";
+import NavLinks from "../layout/NavLinks";
 
 function MobileMenuOverlay({ onClose }) {
   return (

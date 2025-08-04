@@ -1,13 +1,13 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
-import Layout from "./components/Layout/Layout";
-import Home from "./pages/Home/Home";
-import CharacterDetail from "./pages/CharacterDetails/CharacterDetail";
-import Locations from "./pages/Locations/Locations";
-import LocationDetails from "./pages/LocationDetails/LocationDetails";
-import Episodes from "./pages/Episodes/Episodes";
-import EpisodeDetails from "./pages/EpisodeDetails/EpisodeDetails";
-import PageTransitionWrapper from "./components/PageTransitionWrapper/PageTransitionWrapper";
+import Layout from "./shared/layout/Layout";
+import Home from "./features/characters/pages/Home";
+import CharacterDetail from "./features/characters/pages/CharacterDetail";
+import Locations from "./features/locations/pages/Locations";
+import LocationDetails from "./features/locations/pages/LocationDetails";
+import Episodes from "./features/episodes/pages/Episodes";
+import EpisodeDetails from "./features/episodes/pages/EpisodeDetails";
+import PageTransitionWrapper from "./shared/components/PageTransitionWrapper";
 import { AnimatePresence } from "framer-motion";
 
 function App() {

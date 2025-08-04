@@ -1,5 +1,5 @@
 import useIsOffline from "../../hooks/useIsOffline";
-import OfflineNotice from "../OfflineNotice/OfflineNotice";
+// import OfflineNotice from "../OfflineNotice/OfflineNotice";
 
 function WithOfflineGuard({ children }) {
   const isOffline = useIsOffline();

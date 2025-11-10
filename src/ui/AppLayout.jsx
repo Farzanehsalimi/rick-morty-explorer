@@ -1,0 +1,19 @@
+import { Outlet } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
+
+function Layout() {
+  return (
+    <div className="flex flex-col min-h-screen relative">
+      <Header />
+      <main className="grow pt-14 pb-14 bg-secondary-800">
+        <div className="container mx-auto">
+          <Outlet />
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+export default Layout;

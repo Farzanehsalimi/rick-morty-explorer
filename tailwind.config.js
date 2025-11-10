@@ -1,3 +1,12 @@
+function withOpacity(variableName) {
+  return ({ opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`;
+    }
+    return `rgb(var(${variableName}))`;
+  };
+}
+
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -5,18 +14,42 @@ export default {
       center: true,
       padding: {
         DEFAULT: "1.8rem",
-        // sm: "1.5rem",
-        // lg: "1.5rem",
       },
     },
     extend: {
       colors: {
-        primary: "#2196F3",
-        secondary: "#E3F2FD",
-        borderColor: "#DFDFE5",
-        background: "#E5E5E5",
-        hoverColor: "#6d28d9",
+        primary: {
+          900: withOpacity("--color-primary-900"),
+          800: withOpacity("--color-primary-800"),
+          700: withOpacity("--color-primary-700"),
+          600: withOpacity("--color-primary-600"),
+          500: withOpacity("--color-primary-500"),
+          400: withOpacity("--color-primary-400"),
+          300: withOpacity("--color-primary-300"),
+          200: withOpacity("--color-primary-200"),
+          100: withOpacity("--color-primary-100"),
+          50: withOpacity("--color-primary-50"),
+          0: withOpacity("--color-primary-0"),
+        },
+        secondary: {
+          900: withOpacity("--color-secondary-900"),
+          800: withOpacity("--color-secondary-800"),
+          700: withOpacity("--color-secondary-700"),
+          600: withOpacity("--color-secondary-600"),
+          500: withOpacity("--color-secondary-500"),
+          400: withOpacity("--color-secondary-400"),
+          300: withOpacity("--color-secondary-300"),
+          200: withOpacity("--color-secondary-200"),
+          100: withOpacity("--color-secondary-100"),
+          50: withOpacity("--color-secondary-50"),
+          0: withOpacity("--color-secondary-0"),
+        },
+        success: withOpacity("--color-success"),
+        warning: withOpacity("--color-warning"),
+        error: withOpacity("--color-error"),
+        header: withOpacity("--color-header"),
       },
+
       boxShadow: {
         "header-footer": "-2px 0 8px 2px rgba(0, 0, 0, 0.1)",
         "modal-btns":

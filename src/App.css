@@ -1,4 +1,0 @@
-body.modal-open {
-  overflow: hidden !important;
-  padding-right: 15px !important; /* مقدار ثابت یا با جاوااسکریپت محاسبه شده */
-}

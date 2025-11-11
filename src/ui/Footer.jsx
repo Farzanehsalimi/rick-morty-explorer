@@ -3,7 +3,14 @@ function Footer() {
     <div className="w-full shadow-header-footer bg-header fixed bottom-0">
       <div className="container mx-auto py-3 text-center">
         <p className="text-secondary-100">
-          Crafted with ❤️ by Farzaneh Salimi!
+          Crafted with ❤️ by
+          <a
+            href="https://farzanehsalimi.ir"
+            className="text-primary-500 font-semibold"
+          >
+            {" "}
+            Farzaneh Salimi!
+          </a>
         </p>
       </div>
     </div>

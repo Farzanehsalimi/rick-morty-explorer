@@ -69,8 +69,8 @@ function Episodes() {
       </div>
 
       <SearchFilter
-        placeholder={"Filter by name or episode (ex. S01 or S01E02)"}
-        className="w-72 sm:w-[420px] mb-12 sm:mb-14"
+        placeholder={"Filter by name or episode (ex. S01 or E02)"}
+        className="w-[305px] sm:w-[420px] mb-12 sm:mb-14"
         value={localQuery}
         onChange={(e) => setLocalQuery(e.target.value)}
       />

@@ -37,17 +37,17 @@ function CharacterDetail() {
 
   return (
     <div className="mt-4 sm:mt-6 xl:px-28">
-      <div className="grid gap-y-1 sm:grid-cols-3 items-start sm:items-start">
+      <div className="grid gap-y-4 sm:grid-cols-3 items-start sm:items-start">
         <button
           onClick={moveBack}
           className="flex items-center gap-x-2 sm:mt-3 col-span-1 text-secondary-100"
         >
-          <IoArrowBack className="w-4 h-4 sm:w-6 sm:h-6 mt-0.5" />
-          <span className="text-sm sm:text-xl font-bold">Go Back</span>
+          <IoArrowBack className="w-6 h-6 mt-0.5" />
+          <span className="text-xl font-bold">Go Back</span>
         </button>
         <img
           src={character.image}
-          className="col-span-3 w-40 h-40 sm:w-52 sm:h-52 rounded-full mx-auto border-4 border-secondary-700/50"
+          className="col-span-3 w-44 h-44 sm:w-52 sm:h-52 rounded-full mx-auto border-4 border-secondary-700/50"
           alt=""
         />
       </div>
@@ -61,38 +61,32 @@ function CharacterDetail() {
           </h3>
           <div className="space-y-2">
             <div className="pl-3 py-3 border rounded-lg shadow-sm hover:bg-secondary-700 cursor-pointer transition">
-              <p className="text-secondary-50 text-sm sm:text-base">Gender</p>
-              <p className="text-secondary-400 text-xs sm:text-sm">
-                {character.gender}
-              </p>
+              <p className="text-secondary-50 text-base">Gender</p>
+              <p className="text-secondary-400 text-sm">{character.gender}</p>
             </div>
             <div className="pl-3 py-3 border rounded-lg shadow-sm hover:bg-secondary-700 cursor-pointer transition">
-              <p className="text-secondary-50 text-sm sm:text-base">Status</p>
-              <p className="text-secondary-400 text-xs sm:text-sm">
-                {character.status}
-              </p>
+              <p className="text-secondary-50 text-base">Status</p>
+              <p className="text-secondary-400 text-sm">{character.status}</p>
             </div>
             <div className="pl-3 py-3 border rounded-lg shadow-sm hover:bg-secondary-700 cursor-pointer transition">
-              <p className="text-secondary-50 text-sm sm:text-base">Specie</p>
-              <p className="text-secondary-400 text-xs sm:text-sm">
-                {character.species}
-              </p>
+              <p className="text-secondary-50 text-base">Specie</p>
+              <p className="text-secondary-400 text-sm">{character.species}</p>
             </div>
             <div className="pl-3 py-3 border rounded-lg shadow-sm hover:bg-secondary-700 cursor-pointer transition">
-              <p className="text-secondary-50 text-sm sm:text-base">Origin</p>
-              <p className="text-secondary-400 text-xs sm:text-sm">
+              <p className="text-secondary-50 text-base">Origin</p>
+              <p className="text-secondary-400 text-sm">
                 {character.origin.name}
               </p>
             </div>
             <div className="pl-3 py-3 border rounded-lg shadow-sm hover:bg-secondary-700 cursor-pointer transition">
-              <p className="text-secondary-50 text-sm sm:text-base">Type</p>
-              <p className="text-secondary-400 text-xs sm:text-sm">
+              <p className="text-secondary-50 text-base">Type</p>
+              <p className="text-secondary-400 text-sm">
                 {character.type || "Unknown"}
               </p>
             </div>
             <div className="pl-3 py-3 border rounded-lg shadow-sm hover:bg-secondary-700 cursor-pointer transition">
-              <p className="text-secondary-50 text-sm sm:text-base">Location</p>
-              <p className="text-secondary-400 text-xs sm:text-sm">
+              <p className="text-secondary-50 text-base">Location</p>
+              <p className="text-secondary-400 text-sm">
                 {character.location.name}
               </p>
             </div>
@@ -112,12 +106,10 @@ function CharacterDetail() {
                   key={ep.id}
                   className="pr-10 pl-3 py-3 border rounded-lg shadow-sm hover:bg-secondary-700 cursor-pointer transition"
                 >
-                  <p className="text-secondary-50 text-sm sm:text-base">
+                  <p className="text-secondary-50 text-base">
                     {ep.episode} — {truncateText(ep.name, 18)}
                   </p>
-                  <p className="text-xs sm:text-sm text-secondary-400">
-                    {ep.air_date}
-                  </p>
+                  <p className="text-sm text-secondary-400">{ep.air_date}</p>
                 </li>
               ))}
             </ul>

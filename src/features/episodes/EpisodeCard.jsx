@@ -13,9 +13,7 @@ function EpisodeCard({ episode }) {
           <span className="text-xl font-bold text-secondary-200 truncate w-full">
             {name}
           </span>
-          <span className="text-sm font-normal text-secondary-300">
-            {air_date}
-          </span>
+          <span className="text-sm text-secondary-300">{air_date}</span>
           <span className="text-base font-bold text-secondary-300">{code}</span>
         </div>
       </div>

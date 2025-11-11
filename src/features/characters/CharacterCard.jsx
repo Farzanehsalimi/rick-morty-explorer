@@ -15,12 +15,10 @@ function CharacterCard({ character }) {
           alt={name}
         />
         <div className="py-3 px-4">
-          <p className="text-lg md:text-xl font-medium text-secondary-200">
+          <p className="text-lg md:text-xl text-secondary-200">
             {truncateText(name, 15)}
           </p>
-          <span className="text-sm font-normal text-secondary-400">
-            {species}
-          </span>
+          <span className="text-sm text-secondary-400">{species}</span>
         </div>
       </div>
     </Link>

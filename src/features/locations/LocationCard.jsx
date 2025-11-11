@@ -13,7 +13,7 @@ function LocationCard({ location }) {
           <span className="text-xl text-secondary-200 font-bold text-black/90 truncate w-full">
             {name}
           </span>
-          <span className="text-sm font-normal text-secondary-300">{type}</span>
+          <span className="text-sm text-secondary-300">{type}</span>
         </div>
       </div>
     </Link>

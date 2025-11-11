@@ -29,13 +29,13 @@ function EpisodeDetails() {
 
   return (
     <div className=" mt-4 sm:mt-10 xl:px-28">
-      <div className="grid gap-y-1 sm:grid-cols-4 items-baseline">
+      <div className="grid gap-y-4 sm:grid-cols-4 items-baseline">
         <button
           onClick={moveBack}
           className="flex items-center gap-x-2 sm:mt-3 col-span-1 text-secondary-100"
         >
-          <IoArrowBack className="w-4 h-4 sm:w-6 sm:h-6 mt-0.5" />
-          <span className="text-sm sm:text-xl font-bold">Go Back</span>
+          <IoArrowBack className="w-6 h-6 mt-0.5" />
+          <span className="text-xl font-bold">Go Back</span>
         </button>
 
         <h1 className="col-span-3 text-3xl sm:text-4xl md:text-5xl mt-4 sm:mt-0 font-bold text-center sm:text-start text-secondary-100">

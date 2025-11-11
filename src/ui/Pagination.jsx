@@ -50,7 +50,7 @@ export default function Pagination({ totalPages, currentPage, onPageChange }) {
 
 function PaginationNumber({ page, isActive, position, onClick }) {
   const className = classNames(
-    "flex h-8 w-8 lg:h-11 lg:w-11 items-center justify-center text-sm border border-secondary-700 text-secondary-100 cursor-pointer select-none",
+    "flex h-9 w-9 lg:h-11 lg:w-11 items-center justify-center text-sm border border-secondary-700 text-secondary-100 cursor-pointer select-none",
     {
       "z-0 bg-primary-500 !border-primary-500 text-white": isActive,
       "hover:bg-secondary-700": !isActive && position !== "middle",
@@ -67,7 +67,7 @@ function PaginationNumber({ page, isActive, position, onClick }) {
 
 function PaginationArrow({ direction, isDisabled, onClick }) {
   const className = classNames(
-    "flex h-8 w-8 lg:h-11 lg:w-11 items-center justify-center border border-secondary-700 text-secondary-400 cursor-pointer",
+    "flex h-9 w-9 lg:h-11 lg:w-11 items-center justify-center border border-secondary-700 text-secondary-400 cursor-pointer",
     {
       "pointer-events-none text-secondary-200 !border-secondary-700":
         isDisabled,

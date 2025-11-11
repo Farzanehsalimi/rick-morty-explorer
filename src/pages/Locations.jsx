@@ -29,7 +29,7 @@ function Locations() {
     if (debouncedName) params.set("name", debouncedName);
     else params.delete("name");
     setSearchParams(params);
-  }, [debouncedName, searchParams]);
+  }, [debouncedName]);
 
   useEffect(() => {
     const currentName = searchParams.get("name") || "";

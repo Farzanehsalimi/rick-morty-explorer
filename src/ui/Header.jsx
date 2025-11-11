@@ -7,7 +7,7 @@ import { useMobileMenu } from "../hooks/useMobileMenu";
 import MobileMenuOverlay from "./MobileMenuOverlay";
 import { IoIosMenu } from "react-icons/io";
 import { IoCloseOutline } from "react-icons/io5";
-
+import RickLogo from "/src/assets/icons/logo.svg";
 function Header() {
   const { isOpen, closeMenu, toggleMenu } = useMobileMenu();
 
@@ -29,11 +29,7 @@ function Header() {
             <div className="flex gap-4">
               <Link to="/">
                 <div className="rounded-full">
-                  <img
-                    src="/src/assets/icons/logo.svg"
-                    className="w-10 sm:w-12"
-                    alt="logo"
-                  />
+                  <img src={RickLogo} className="w-10 sm:w-12" alt="logo" />
                 </div>
               </Link>
               <DarkModeToggle />

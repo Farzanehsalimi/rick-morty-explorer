@@ -32,7 +32,7 @@ function Home() {
     if (debouncedName) params.set("name", debouncedName);
     else params.delete("name");
     setSearchParams(params);
-  }, [debouncedName, searchParams]);
+  }, [debouncedName]);
 
   const handlePageChange = (newPage) => {
     const params = new URLSearchParams(searchParams);

@@ -70,7 +70,6 @@ function Home() {
         src={RickAndMortyLogo}
         alt="rick-and-morty-logo-charaters"
       />
-
       {(isOpen || isClosing) && (
         <div className="fixed inset-0 z-50 flex items-center justify-center lg:hidden">
           <Backdrop />
@@ -83,7 +82,6 @@ function Home() {
           </FilterModalContainer>
         </div>
       )}
-
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 lg:gap-4 mb-12 sm:mb-16">
         <SearchFilter
           placeholder={"Filter by name..."}
@@ -107,7 +105,6 @@ function Home() {
           onApply={handleApplyFilters}
         />
       </div>
-
       <div>
         {isLoading ? (
           <CharacterSkeletonList />
@@ -120,7 +117,7 @@ function Home() {
         )}
       </div>
 
-      {data?.info?.pages && (
+      {data?.info?.pages > 0 && (
         <div className="pt-14 pb-8">
           <Pagination
             totalPages={data.info.pages}

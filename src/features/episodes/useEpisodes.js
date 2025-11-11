@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getEpisodes } from "../../services/EpisodeService";
+import { getEpisodes } from "../../services/episodeService";
 
 export function useEpisodes({ page = 1, name = "", episode = "" }) {
   return useQuery({

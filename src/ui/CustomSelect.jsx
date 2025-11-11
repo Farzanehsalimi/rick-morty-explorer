@@ -17,7 +17,7 @@ function CustomSelect({ options, value, onChange, placeholder, className }) {
             {selectedOption ? (
               <span>{selectedOption.label}</span>
             ) : (
-              <span className="text-sm xl:text-base text-secondary-300">
+              <span className="text-sm lg:text-base text-secondary-300">
                 {placeholder}
               </span>
             )}
@@ -42,7 +42,7 @@ function CustomSelect({ options, value, onChange, placeholder, className }) {
                   key={option.value}
                   value={option.value}
                   className={({ active }) =>
-                    `cursor-pointer px-4 py-2 text-xs xl:text-base font-black text-secondary-100 bg-secondary-800 hover:bg-primary-50 hover:text-black ${
+                    `cursor-pointer px-4 py-2 text-xs lg:text-base font-black text-secondary-100 bg-secondary-800 hover:bg-primary-50 hover:text-black ${
                       active ? "bg-primary-100" : ""
                     }`
                   }

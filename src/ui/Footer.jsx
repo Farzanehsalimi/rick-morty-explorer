@@ -7,6 +7,8 @@ function Footer() {
           <a
             href="https://farzanehsalimi.ir"
             className="text-primary-500 font-semibold"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {" "}
             Farzaneh Salimi!

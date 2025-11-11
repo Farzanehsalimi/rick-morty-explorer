@@ -66,7 +66,7 @@ function LocationFilters({ className = "", onApply }) {
 
       <button
         onClick={handleApply}
-        className="lg:hidden mt-4 h-9 mb-2 shadow-modal-btns rounded-xl font-bold text-primary-600 bg-primary-100"
+        className="lg:hidden text-lg mt-4 h-9 mb-2 shadow-modal-btns rounded-xl font-bold text-primary-600 bg-primary-100"
       >
         APPLY
       </button>

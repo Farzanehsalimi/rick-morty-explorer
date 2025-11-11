@@ -52,8 +52,6 @@ function PaginationNumber({ page, isActive, position, onClick }) {
   const className = classNames(
     "flex h-8 w-8 lg:h-11 lg:w-11 items-center justify-center text-sm border border-secondary-700 text-secondary-100 cursor-pointer select-none",
     {
-      "": position === "first" || position === "single",
-      "": position === "last" || position === "single",
       "z-0 bg-primary-500 !border-primary-500 text-white": isActive,
       "hover:bg-secondary-700": !isActive && position !== "middle",
       "text-secondary-500 cursor-default": position === "middle",

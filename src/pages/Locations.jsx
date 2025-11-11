@@ -13,6 +13,7 @@ import Loading from "../ui/Loading";
 import { useEffect, useState } from "react";
 import { useDebounce } from "../hooks/useDebounce";
 import ErrorHandler from "../ui/ErrorHandler";
+import RickAndMortyLocations from "/src/assets/images/rick-and-morty-logo-locations.png";
 
 function Locations() {
   const { isOpen, open, isClosing, close } = useModal();
@@ -72,7 +73,7 @@ function Locations() {
       <div>
         <img
           className="mx-auto w-80 md:w-80 my-10"
-          src="/src/assets/images/rick-and-morty-logo-locations.svg"
+          src={RickAndMortyLocations}
           alt="rick-and-morty-logo-charaters"
         />
       </div>

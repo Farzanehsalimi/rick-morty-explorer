@@ -8,6 +8,7 @@ import Loading from "../ui/Loading";
 import ErrorHandler from "../ui/ErrorHandler";
 import { useEffect, useState } from "react";
 import { useDebounce } from "../hooks/useDebounce";
+import RickAndMortyEpisodes from "/src/assets/images/rick-and-morty-logo-episodes.png";
 
 function Episodes() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -62,7 +63,7 @@ function Episodes() {
       <div>
         <img
           className="mx-auto w-80 md:w-72 my-10"
-          src="/src/assets/images/rick-and-morty-logo-episodes.svg"
+          src={RickAndMortyEpisodes}
           alt="rick-and-morty-logo-charaters"
         />
       </div>

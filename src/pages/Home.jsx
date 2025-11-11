@@ -1,7 +1,7 @@
 import SearchFilter from "../ui/SearchFilter";
 import FilterModalContainer from "../ui/FilterModalContainer";
 import Backdrop from "../ui/Backdrop";
-import RickAndMortyLogo from "/src/assets/images/rick-and-morty-logo-charaters.svg";
+import RickAndMortyLogo from "/src/assets/images/rick-and-morty-logo-charaters.png";
 import { useModal } from "../hooks/useModal";
 import { useCharacters } from "../features/characters/useCharacters";
 import CharacterSkeletonList from "../features/characters/CharacterSkeletonList";

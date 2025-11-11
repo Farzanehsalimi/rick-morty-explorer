@@ -1,12 +1,5 @@
 @font-face {
   font-family: "karla";
-  font-weight: 900;
-  font-style: normal;
-  src: url("../assets/fonts/Karla-ExtraBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "karla";
   font-weight: 700;
   font-style: normal;
   src: url("../assets/fonts/Karla-Bold.ttf") format("truetype");
@@ -17,18 +10,4 @@
   font-weight: 600;
   font-style: normal;
   src: url("../assets/fonts/Karla-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "karla";
-  font-weight: 500;
-  font-style: normal;
-  src: url("../assets/fonts/Karla-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "karla";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../assets/fonts/Karla-Regular.ttf") format("truetype");
 }

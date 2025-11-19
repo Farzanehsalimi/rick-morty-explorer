@@ -29,7 +29,7 @@ The project is deployed on Vercel:
 
 ## 📁 Project Structure
 
-This project was refactored from a traditional folder layout into a **feature-based directory structure**, where each domain contains its components, hooks, services, and UI elements.
+This project refactors the traditional folder layout by grouping domain-specific components and hooks inside feature folders (characters, locations, episodes), while common hooks, services, and UI components are maintained separately under shared directories for better reusability and modularity
 
 ```bash
 src/

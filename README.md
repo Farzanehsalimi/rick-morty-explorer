@@ -1,6 +1,6 @@
 # Rick and Morty Explorer
 
-A fully featured **React + Vite** application built by **Farzaneh Salimi** (farzanehsalimi.ir), powered by the Rick and Morty API. The project follows a **feature‑based architecture**, delivers smooth navigation through **React Router**, and uses **React Query** for efficient data fetching and caching.
+A fully featured **React + Vite** application built by **[Farzaneh Salimi](https://farzanehsalimi.ir)**, powered by the Rick and Morty API. The project follows a **feature‑based architecture**, delivers smooth navigation through **React Router**, and uses **React Query** for efficient data fetching and caching.
 
 ---
 
@@ -57,43 +57,43 @@ The application includes **three main pages**, each with robust filtering, searc
 Displays a paginated, searchable, and filterable list of characters.
 
 **Features:**
-pagination, search bar, three filters (species, status, gender), character detail pages, skeleton UI, smooth animations via Framer-Motion.
+Pagination, search bar, three filters (species, status, gender), character detail pages, skeleton UI, smooth animations via Framer-Motion.
 
 Characters Page — Interaction Previews:
 
-### 1️⃣ Pagination
+#### Pagination
 
-<img src="/public/readme-assets/characters-pagination.gif" alt="characters-pagination-gif" width="600"/>
+<img src="/readme-assets/characters-pagination.gif" alt="characters-pagination-gif" width="600"/>
 
-### 2️⃣ Search
+#### Search
 
-<img src="/public/readme-assets/characters-search.gif" alt="characters-search-gif" width="600"/>
+<img src="/readme-assets/characters-search.gif" alt="characters-search-gif" width="600"/>
 
-### 3️⃣ Filters (Species / Status / Gender)
+#### Filters (Species / Status / Gender)
 
-<img src="/public/readme-assets/characters-filtering.gif" alt="characters-filtering-gif" width="600"/>
+<img src="/readme-assets/characters-filtering.gif" alt="characters-filtering-gif" width="600"/>
 
-### 4️⃣ Responsive Design
+#### Responsive Design
 
 The entire application is fully responsive across mobile, tablet, and desktop breakpoints. All three main pages (Characters, Locations, Episodes) follow the same responsive layout strategy.
 
-<img src="/public/readme-assets/characters-responsive.gif" alt="characters-responsive-gif" width="600"/>
+<img src="/readme-assets/characters-responsive.gif" alt="characters-responsive-gif" width="600"/>
 
-### 5️⃣ Character Detail Page
+#### Character Detail Page
 
-<img src="/public/readme-assets/character-detail-page.png" alt="character-detail-page" width="400"/>
+<img src="/readme-assets/character-detail-page.png" alt="character-detail-page" width="600"/>
 
 ### 2. Locations Page
 
 Shows all locations with pagination, filters, and resident lists.
 
-<img src="/public/readme-assets/locations-page.png" alt="locations-page" width="400"/>
+<img src="/readme-assets//locations-page.png" alt="locations-page" width="600"/>
 
 ### 3. Episodes Page
 
 Displays episodes with pagination and search, with expandable character lists.
 
-<img src="/public/readme-assets/episodes-page.png" alt="episodes-page" width="400"/>
+<img src="/readme-assets/episodes-page.png" alt="episodes-page" width="600"/>
 
 ---
 
@@ -116,8 +116,8 @@ The application includes full **Dark Mode / Light Mode** support, stored in loca
 Clone the project and install dependencies.
 
 ```bash
-Clone the repository
-cd rickAndMortyApp
+git clone https://github.com/Farzanehsalimi/rick-morty-explorer.git
+cd rick-morty-explorer
 npm install
 npm run dev
 ```

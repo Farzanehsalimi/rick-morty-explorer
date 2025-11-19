@@ -132,4 +132,4 @@ npm run build
 
 ---
 
-Crafted with care by **Farzaneh Salimi** — farzanehsalimi.ir ✨
+Crafted with care by **Farzaneh Salimi** — [farzanehsalimi.ir](https://farzanehsalimi.ir) ✨

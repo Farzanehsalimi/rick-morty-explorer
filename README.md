@@ -52,7 +52,7 @@ src/
 
 The application includes **three main pages**, each with robust filtering, search, pagination, and detail views.
 
-### 1. Characters Page
+🟣 ### 1. Characters Page
 
 Displays a paginated, searchable, and filterable list of characters.
 
@@ -76,20 +76,23 @@ Characters Page — Interaction Previews:
 ### 4️⃣ Responsive Design
 
 The entire application is fully responsive across mobile, tablet, and desktop breakpoints. All three main pages (Characters, Locations, Episodes) follow the same responsive layout strategy.
+
 <img src="/public/readme-assets/characters-responsive.gif" alt="characters-responsive-gif" width="600"/>
 
 ### 5️⃣ Character Detail Page
 
 <img src="/public/readme-assets/character-detail-page.png" alt="character-detail-page" width="400"/>
 
-### 6️⃣ Locations Page
+🟣 ### 2. Locations Page
 
 Shows all locations with pagination, filters, and resident lists.
+
 <img src="/public/readme-assets/locations-page.png" alt="locations-page" width="400"/>
 
-### 7️⃣ Episodes Page
+🟣 ### 3. Episodes Page
 
 Displays episodes with pagination and search, with expandable character lists.
+
 <img src="/public/readme-assets/episodes-page.png" alt="episodes-page" width="400"/>
 
 ---

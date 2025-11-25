@@ -1,6 +1,6 @@
 # Rick and Morty Explorer
 
-A fully featured **React + Vite** application built by **[Farzaneh Salimi](https://farzanehsalimi.ir)**, powered by the Rick and Morty API. The project follows a **feature‑based architecture**, delivers smooth navigation through **React Router**, and uses **React Query** for efficient data fetching and caching.
+A fully featured **React + Vite** application built by **[Farzaneh Salimi](https://farzanehsalimi.ir)**, powered by the Rick and Morty API. The project follows a **feature‑based architecture**, delivers smooth navigation through **React Router**, and uses **TanStack Query** for efficient data fetching and caching.
 
 ---
 
@@ -16,7 +16,7 @@ The project is deployed on Vercel:
 - **React (JavaScript)**
 - **Vite**
 - **TailwindCSS** for modern UI styling
-- **React Query** for data synchronization and caching
+- **TanStack Query** for data synchronization and caching
 - **React Router DOM** for routing between pages
 - **Headless UI** for accessible, customizable filter components
 - **React Icons** for iconography
@@ -107,7 +107,7 @@ The application includes full **Dark Mode / Light Mode** support, stored in loca
 
 - Skeleton UI for lists and detail pages
 - React Spinners for subtle loading indicators
-- Full error boundary behavior using React Query
+- Full error boundary behavior using TanStack Query
 
 ---
 

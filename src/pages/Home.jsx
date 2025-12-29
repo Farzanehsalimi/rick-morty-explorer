@@ -27,10 +27,16 @@ function Home() {
   const status = searchParams.get("status") || "";
 
   useEffect(() => {
+    const currentName = searchParams.get("name") || "";
+
+    if (debouncedName === currentName) return;
+
     const params = new URLSearchParams(searchParams);
     params.set("page", 1);
+
     if (debouncedName) params.set("name", debouncedName);
     else params.delete("name");
+
     setSearchParams(params);
   }, [debouncedName]);
 
